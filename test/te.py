@@ -1,17 +1,17 @@
 
 
 class Solution:
+    #
+    # def __init__(self):
+    #     self.nums = []
+    #     self.nums.append(2)
+    #
+    #     self.nums.append(4)
+    #     print(self.nums)
+    #     self.nums[2] = 10
 
-    def __init__(self):
-        self.nums = []
-        self.nums.append(2)
-        self.nums.append(3)
-        self.nums.append(4)
-        print(self.nums)
-        self.nums[2] = 10
 
-
-
+print("test")
 arr = [1,2,3,4]
 arr1 = arr[0:2]
 
