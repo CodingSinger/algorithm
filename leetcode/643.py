@@ -20,6 +20,7 @@ class Solution:
 
         return (sums/ float(k))
 
+    
 
 l = [1,12,-5,-6,50,3]
 s = Solution()
