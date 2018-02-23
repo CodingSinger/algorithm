@@ -1,3 +1,5 @@
+class A:
+    def say(self):
 
 
 
