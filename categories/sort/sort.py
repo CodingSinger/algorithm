@@ -16,6 +16,8 @@ import random
 import time
 import copy
 
+import math
+
 
 def bubbleSort(nums):
 
@@ -228,6 +230,104 @@ def mergeSort(nums):
 
 
 
+def quicksort(lst, lo, hi):
+    if lo < hi:
+        p = partition(lst, lo, hi)
+        quicksort(lst, lo, p)
+        quicksort(lst, p+1, hi)
+    return
+
+def partition(lst, lo, hi):
+    pivot = lst[hi-1]
+    i = lo - 1
+    for j in range(lo, hi):
+        if lst[j] < pivot:
+            i += 1
+            lst[i], lst[j] = lst[j], lst[i]
+    if lst[hi-1] < lst[i+1]:
+        lst[i+1], lst[hi-1] = lst[hi-1], lst[i+1]
+    return i+1
+
+
+
+
+def quicksort2(a,p,q):
+    if p<q:
+        r = partition2(a,p,q)
+        #对r的左右两部分继续排序
+        quicksort2(a,p,r)
+        quicksort2(a,r+1,q)
+
+
+
+
+
+def partition2(a,p,q):
+    guard = a[p]#设置哨兵
+
+    temp = p
+    for i in range(p+1,q):
+        #遍历，将小于哨兵的元素移到前面去，temp相当于隔离小于哨兵和大于哨兵元素的一个分界点。
+        if a[i]<= guard:
+            #移动
+            # 分界点往前腾出一个位置
+            temp+=1
+            #此时a[temp]是大于哨兵的一个元素，和小于哨兵的元素交换位置
+            a[temp],a[i] = a[i],a[temp]
+
+
+    #循环完后，发现temp及temp之前的都是小于guard的，temp之后的都是大于或者等于guard的,将a[p]和a[temp]换个位置，则能明确地划分出来 ,并且这表示这个guard在这个数组的位置已经确定了在temp。
+
+    a[temp],a[p] = a[p],a[temp]
+
+
+
+    return temp #
+
+
+
+
+
+## 堆排序
+
+
+def heapSortAsc(arr):
+
+    #构建大顶堆
+    #叶子节点n和非叶子节点l满足 n+1 = l ,即n+l = len(arr) 所以最后一个非叶子节点下标为math.ceil((len(arr)-1)/2)-1
+    # 将子节点中最大的和父节点比较，如果大于父节点则进行和父节点互换值，依次从下往上遍历父节点，最后，根节点是最大值。
+
+
+    def build(a,length):
+
+
+        index = math.ceil((length - 1) / 2) - 1
+
+        for i in range(index, -1, -1):
+            right = float("-inf")
+            left = arr[2 * i + 1] #左子树是肯定有的
+            if 2*i+2 < length: #有右子树  需要判断
+                right = arr[2*i+2]
+            if left <= right:
+                if arr[i] < right:
+                    arr[i], arr[2 * i + 2] = right, arr[i]
+            else:
+                if arr[i] < left:
+                    arr[i], arr[2 * i + 1] = left, arr[i]
+
+
+
+                    #排序
+
+
+    length = len(arr)
+    build(arr,length)
+    for i in range(length-1,0,-1):
+
+        arr[0],arr[i] = arr[i],arr[0]
+
+        length-=1
+        build(arr,length)
 
 
 
@@ -238,6 +338,52 @@ def mergeSort(nums):
 
 
 
+
+
+
+
+
+#利用小顶堆进行降序排序
+#原理和大顶堆升序排序差不多，就是相反，父节点的值小于子节点的值，
+#1. 排序时，将最小的元素和最后一个子节点进行换位，继续2
+#2. 然后重新构建小顶堆，继续1
+
+
+
+
+def heapSortDes(arr):
+
+
+    def build(a,length):
+
+        index = math.ceil((length - 1) / 2) - 1
+
+        for i in range(index, -1, -1):
+            right = float("inf")  # 右子树初始化为无穷大值
+
+            left = arr[2 * i + 1] #左子树是肯定有的
+            if 2*i+2 < length: #有右子树  需要判断
+                right = arr[2*i+2]
+            if left >= right:
+                if arr[i] > right:
+                    arr[i], arr[2 * i + 2] = right, arr[i]
+            else:
+                if arr[i] > left:
+                    arr[i], arr[2 * i + 1] = left, arr[i]
+
+
+
+                    #排序
+
+
+    length = len(arr)
+    build(arr,length)
+    for i in range(length-1,0,-1):
+
+        arr[0],arr[i] = arr[i],arr[0]
+
+        length-=1
+        build(arr,length)
 
 
 
@@ -266,50 +412,66 @@ def mergeSort(nums):
 if __name__ == '__main__':
 
 
+    arr = [6,10,13,5,8,3,2,11]
 
 
-    n = 4000
+    quicksort(arr,0,8)
+    print(arr)
+    arr1 = [6,10,13,5,8,3,2,11]
+    quicksort2(arr1,0,8)
+    print(arr1)
 
-    arr = []
-    for i in range(n):
-        arr.append(random.randint(0,1000))
-
-
-
-    print("原始数组",arr)
-    start1 = time.time()
-
-    insertSort(arr.copy())
-
-    print(time.time()-start1)
-    start2 = time.time()
-
-    shellSort(arr.copy())
-
-    print(time.time() - start2)
-
-    start3 = time.time()
-
-    selectionSort(arr.copy())
+    arr2 =  [70,80,60,30,50,90,20]
+    heapSortAsc(arr2)
+    print(arr2)
+    arr3 =  [70,80,60,30,50,90,20]
+    heapSortDes(arr3)
+    print(arr3)
 
 
-    c = copy.deepcopy(arr)
-    print(time.time() - start3)
 
-
-    start4 = time.time()
-    arr4 = arr.copy()
-    mergeSort(arr4)
-
-    print(time.time()-start4)
-
-    start5 = time.time()
-    arr5 = arr.copy()
-
-    arr5 = merge_sort(arr5)
-    print(time.time()-start5)
-    print(arr5)
-    print(arr4)
+    # n = 4000
+    #
+    # arr = []
+    # for i in range(n):
+    #     arr.append(random.randint(0,1000))
+    #
+    #
+    #
+    # print("原始数组",arr)
+    # start1 = time.time()
+    #
+    # insertSort(arr.copy())
+    #
+    # print(time.time()-start1)
+    # start2 = time.time()
+    #
+    # shellSort(arr.copy())
+    #
+    # print(time.time() - start2)
+    #
+    # start3 = time.time()
+    #
+    # selectionSort(arr.copy())
+    #
+    #
+    # c = copy.deepcopy(arr)
+    # print(time.time() - start3)
+    #
+    #
+    # start4 = time.time()
+    # arr4 = arr.copy()
+    # mergeSort(arr4)
+    #
+    # print(time.time()-start4)
+    #
+    # start5 = time.time()
+    # arr5 = arr.copy()
+    #
+    # arr5 = merge_sort(arr5)
+    # print(time.time()-start5)
+    # print(arr5)
+    # print(arr4)
 
 
 
