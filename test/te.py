@@ -1,16 +1,25 @@
 
 
-class Solution:
-    #
-    # def __init__(self):
-    #     self.nums = []
-    #     self.nums.append(2)
-    #
-    #     self.nums.append(4)
-    #     print(self.nums)
-    #     self.nums[2] = 10
-
-
+# class Solution:
+#     #
+#     # def __init__(self):
+#     #     self.nums = []
+#     #     self.nums.append(2)
+#     #
+#     #     self.nums.append(4)
+#     #     print(self.nums)
+#     #     self.nums[2] = 10
+for i in range(0,1):
+    print("dd")
+i,j = 1,2
+i,j = j,i
+print(i,j)
+arr2 = [1,2,3,4]
+# arr2[0:2] = [5,6]
+arr3 = arr2[:2]
+arr3[0] = 10
+print(arr2)
+print(arr3)
 print("test")
 arr = [1,2,3,4]
 arr1 = arr[0:2]

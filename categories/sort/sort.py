@@ -85,7 +85,7 @@ def insertSort(nums):
                 nums[j+1] = num
                 break
 
-
+#希尔排序
 def shellSort(nums):
 
     lens = len(nums)
@@ -417,7 +417,7 @@ if __name__ == '__main__':
 
     quicksort(arr,0,8)
     print(arr)
-    arr1 = [6,10,13,5,8,3,2,11]
+    arr1 = [6,5,13,5,8,3,2,11]
     quicksort2(arr1,0,8)
     print(arr1)
 
