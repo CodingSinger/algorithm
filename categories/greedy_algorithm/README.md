@@ -5,3 +5,8 @@
 
 贪心算法的重要一个属性就是：局部最优解也是全局最优解。
 此时利用贪心算法比动态规划更有效率。
+
+leetcode:
+455
+
+[122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
