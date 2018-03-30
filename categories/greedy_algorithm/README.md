@@ -10,3 +10,7 @@ leetcode:
 455
 
 [122](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)
+
+[767](https://leetcode.com/problems/reorganize-string/description/)
+
+[621](https://leetcode.com/problems/task-scheduler/description/)

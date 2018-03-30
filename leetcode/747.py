@@ -1,4 +1,6 @@
 
+
+# 思路 只要找出第一大和第二大的，看第一大的是否是第二大的两倍即可
 class Solution:
     def helper(self,nums):
 

@@ -1,4 +1,12 @@
+
+
+
+
+#合理运用hashMap set等集合来处理能够使算法简单
+
+#例如此题，将数字放入hashMap中，对重复的更新值为2。 然后遍历1-n,不存在map[i+1]的就为缺少的，存在map[i+1]==2的就是重复的
 class Solution:
+
     def helper(self,nums):
 
         map = {}
