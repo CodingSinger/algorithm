@@ -50,6 +50,54 @@ class Solution:
 
 
 
+    def helper2(self,root):
+
+        self.result2 = 0
+        def dfs(node):
+            if not node:
+                return 0
+            left = dfs(node.left)
+            right = dfs(node.right)
+
+            left_now = right_now =  0
+            if node.val == node.left.val:
+                left_now = left+1
+            if node.val == node.right.val:
+                right_now = right+1
+
+            self.result2 = max(self.result2,left_now+right_now)
+            return max(left,right)
+
+
+    def helper3(self,root):
+        self.res = 0
+
+
+
+        def dfs(node):
+
+            if not node:
+                return 0
+            left = dfs(node.left)
+            right = dfs(node.right)
+
+            left_now = right_now = 0
+            if node.left.val == node.val:
+                left_now = left+1
+            if node.right.val == node.val:
+                right_now = right+1
+
+            self.res = max(self.res,left_now+right_now)
+            return max(left,right)
+
+
+        dfs(root)
+        return self.res
+
+
+
+
+
 
 
 root = TreeNode(5)
