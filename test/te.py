@@ -11,7 +11,9 @@
 #     #     self.nums[2] = 10
 
 l1 = [1 if i%2 ==0 else 0 for i in range(10)]
-
+a = range(10)
+print(a)
+a[1]=20
 print(l1)
 li = [1,3,5,7,9]
 #不建议在循环中改变当前正在循环的数组 https://www.zhihu.com/question/49098374
