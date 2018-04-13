@@ -37,6 +37,7 @@ root = TreeNode(21474836471)
 
 
 s = Solution()
-print(s.helper(root))
+print(s.helper(None))
 dict = {1:2,3:1,4:8}
 print(max(dict,key=dict.get))
+
