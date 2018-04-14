@@ -37,6 +37,8 @@ class Solution:
 
             Solution.show(node.right)
 
+
+    #思路2：也是从最大节点开始遍历，累加已经遍历过的节点值，根据累加值来更新当前节点值
     def helper2(self, root):
 
         self.sums2 = 0
