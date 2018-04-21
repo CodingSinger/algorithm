@@ -6,8 +6,10 @@ class TreeNode:
 
 
 # 递归到最底(没有子节点)，如果最底层是0，则删除，然后往上移，如果该节点也是0，并且子节点都被移除了，则也移除，继续往上移动。依次递归
+# 下层树先操作才能操作上层树的题目时，需要先左右深度遍历到最底层，然后进行操作，像该题中的判断删除操作，就放在dfs(node.left)和dfs(node.right)之后
 class Solution:
     def helper(self, root):
+
 
         def dfs(node, parent, left):
 
