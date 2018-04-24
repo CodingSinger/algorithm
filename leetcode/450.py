@@ -6,6 +6,8 @@ class TreeNode:
         self.right = None
 
 class Solution:
+    #思路很简单：就是找到待删除节点，然后从删除节点的左子树上找到最大的或者从删除节点的右子树上找到最小的节点为替补节点，最大最小的肯定都是树的末尾，将待删除节点的值转化为替补节点的值，
+    # 然后删除替补节点，删除替补节点很简单，因为替补节点一定是叶子节点。直接移除即可。
     def helper(self,root,key):
 
         def delete(node,val):
@@ -34,6 +36,7 @@ class Solution:
 
 
 
+        #找到最大的节点。
         def findLeftMax(node):
 
             while node.right:
