@@ -46,6 +46,8 @@ class Solution:
 
         return robHouse(root)
 
+   
+
 
 root = TreeNode(3)
 root.left = TreeNode(2)
