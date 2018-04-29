@@ -7,6 +7,8 @@ class Solution:
     def helper(self,root):
         d = {}
         self.res = 0
+
+        #设父节点的position为x,则左子树的position为2x，右子树的2x+1
         def dfs(node,depth,pos):
             if node:
                 #记录下第一个在该层的节点的位置
