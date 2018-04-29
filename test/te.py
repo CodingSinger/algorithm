@@ -25,6 +25,12 @@
 # i,j = 1,2
 # i,j = j,i
 # print(i,j)
+print(10/3)
+print(10//3)
+list = [1,2,3]
+list1 = list
+list1[1] = 6
+print(list)
 arr2 = [1,2,3,4]
 # arr2[0:2] = [5,6]
 arr3 = arr2[:2]
