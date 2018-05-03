@@ -9,16 +9,23 @@ class Solution:
             if not nums: return True
             v = nums.pop()
             for i, group in enumerate(groups):
+                #如果当前组能加上 v，则加上该v，然后往后递归
                 if group + v <= target:
                     groups[i] += v
-                    if search(groups): return True
+                    # 如果后续的search()返回false，则必须回溯到之前的状态 即groups[i]-=v 并且将之前pop的都重新append进去
+                    if search(groups):
+                        return True
+
                     groups[i] -= v
-                if not group: break
+                if not group:
+                    break
             nums.append(v)
             return False
 
         nums.sort()
+        # 如果最大元素大于target,则可能无法划分
         if nums[-1] > target: return False
+        # 将nums等于target的都去掉
         while nums and nums[-1] == target:
             nums.pop()
             k -= 1
@@ -27,8 +34,8 @@ class Solution:
 
 
 
-nums = [4, 3, 2, 3, 5, 2, 1]
-nums = [2,2,10,5,2,7,2,2,13]
+# nums = [1,1,1, 1]
+nums = [2,2,2,2,3,4,5]
 s = Solution()
-print(s.helper(nums,3))
+print(s.helper(nums,4))
 
