@@ -25,6 +25,10 @@
 # i,j = 1,2
 # i,j = j,i
 # print(i,j)
+
+for i in range(1,3):
+    print("he")
+print(i)
 print(10/3)
 print(10//3)
 list = [1,2,3]
