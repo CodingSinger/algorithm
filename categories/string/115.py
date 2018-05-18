@@ -1,6 +1,9 @@
+
 class Solution:
 
 
+
+    # 动态规划，可以拆分成子问题，并且全局解包含局部解
     # mem[i+1][j+1]表示S[0..j]中包含T[0..i]中的子序列的次数
 
     # 动态转化方程：
@@ -24,6 +27,7 @@ class Solution:
         return mem[lt][ls]
 
 
+        #类似的题目还有球最大公共子序列
 S = "babgbag"
 T = "bag"
 s = Solution()
