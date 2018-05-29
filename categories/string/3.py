@@ -18,7 +18,7 @@ class Solution:
                 dic.remove(s[start])
                 start += 1
         return ans
-
+    # 优化 用hashMap直接记录重复元素的位置，直接进行移动即可，而不需要上面代码后续的移动来找到滑动。
 
 s = Solution()
 print(s.helper("abcbs"))
