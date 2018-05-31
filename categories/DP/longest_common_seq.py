@@ -15,7 +15,7 @@ class Solution:
                 if x[i] == y[j]:
                     lcs[i + 1][j + 1] = lcs[i][j] + 1
                 else:
-                    lcs[i + 1][j + 1] = max(lcs[i + 1][j], lcs[i][j + 1])
+                    lcs[i + 1][j + 1] = max(lcs[i + 1][j], lcs[i][j + 1]) #取之前最长的
 
         return lcs[lx][ly]
 
