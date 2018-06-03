@@ -1,4 +1,7 @@
 class Solution:
+
+    # 状态path[i][j]表示到地图[i][j]的地方一共有几种走法
+    # 因为只能向下和向右 所以path[i][j] = path[i-1][j]+path[i][j-1]
     def helper(self, m, n):
         path = [[0 for i in range(m)] for i in range(n)]
 

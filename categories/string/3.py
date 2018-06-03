@@ -2,6 +2,8 @@ class Solution:
 
     # 滑动窗口  例如 a b c d c s 当遍历到c时，发现与之前的子串(abcd)有元素c重复，我们需要把当前元素在之前子串位置之前的元素包括自己都移除。新子串为(dc)，如何进行滑动这个距离。就是解题关键
     def helper(self, s):
+        if s == "":
+            return 0
         dic = set()  #dic始终保存上个不重复子串的元素
         ls = len(s)
         ans = float("-inf")
