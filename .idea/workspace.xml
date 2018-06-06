@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e005784a-7c72-4ee3-a165-af75ff6012f0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/categories/string/6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/categories/DP/64.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,6 +97,7 @@
     <SUITE FILE_PATH="coverage/algorithm$67.coverage" NAME="67 Coverage Results" MODIFIED="1520059424568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
     <SUITE FILE_PATH="coverage/algorithm$70.coverage" NAME="70 Coverage Results" MODIFIED="1517194953542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
     <SUITE FILE_PATH="coverage/algorithm$662.coverage" NAME="662 Coverage Results" MODIFIED="1524839768085" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
+    <SUITE FILE_PATH="coverage/algorithm$64.coverage" NAME="64 Coverage Results" MODIFIED="1528300636804" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/categories/DP" />
     <SUITE FILE_PATH="coverage/algorithm$653.coverage" NAME="653 Coverage Results" MODIFIED="1523109096586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
     <SUITE FILE_PATH="coverage/algorithm$top_k.coverage" NAME="top_k Coverage Results" MODIFIED="1525607590746" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/categories/sort" />
     <SUITE FILE_PATH="coverage/algorithm$628.coverage" NAME="628 Coverage Results" MODIFIED="1519223080806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/leetcode" />
@@ -137,20 +138,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="6.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="6.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/categories/string/6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="18" selection-start-line="3" selection-start-column="6" selection-end-line="25" selection-end-column="18" />
+            <state relative-caret-position="450">
+              <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="longest_common_seq.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/categories/DP/longest_common_seq.py">
+      <file leaf-file-name="64.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/categories/DP/64.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+            <state relative-caret-position="90">
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -230,7 +231,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/leetcode/645.py" />
         <option value="$PROJECT_DIR$/leetcode/747.py" />
         <option value="$PROJECT_DIR$/leetcode/767.py" />
         <option value="$PROJECT_DIR$/leetcode/621.py" />
@@ -281,6 +281,7 @@
         <option value="$PROJECT_DIR$/categories/string/3.py" />
         <option value="$PROJECT_DIR$/categories/two_pointer/11.py" />
         <option value="$PROJECT_DIR$/categories/string/6.py" />
+        <option value="$PROJECT_DIR$/categories/DP/64.py" />
       </list>
     </option>
   </component>
@@ -304,6 +305,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,7 +362,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -391,7 +392,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.6">
+  <component name="RunManager" selected="Python.64">
     <configuration name="11" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -487,25 +488,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="62" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="algorithm" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/categories/DP" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/categories/DP/62.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="63" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="algorithm" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -520,6 +502,25 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/categories/DP/63.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="64" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="algorithm" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/categories/DP" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/categories/DP/64.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -548,19 +549,19 @@
       <item itemvalue="Python.594" />
       <item itemvalue="Python.38" />
       <item itemvalue="Python.769" />
-      <item itemvalue="Python.62" />
       <item itemvalue="Python.63" />
       <item itemvalue="Python.3" />
       <item itemvalue="Python.11" />
       <item itemvalue="Python.6" />
+      <item itemvalue="Python.64" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.64" />
         <item itemvalue="Python.6" />
         <item itemvalue="Python.11" />
         <item itemvalue="Python.3" />
         <item itemvalue="Python.63" />
-        <item itemvalue="Python.62" />
       </list>
     </recent_temporary>
   </component>
@@ -809,17 +810,17 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50476193" side_tool="true" weight="0.26526082" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4952381" weight="0.21242484" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4952381" visible="true" weight="0.21242484" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.2965932" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.25851703" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25851703" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -1444,39 +1445,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/categories/string/6.py</url>
-          <line>5</line>
+          <line>7</line>
           <option name="timeStamp" value="248" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/categories/string/6.py</url>
-          <line>11</line>
+          <line>13</line>
           <option name="timeStamp" value="249" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/categories/string/6.py</url>
-          <line>18</line>
+          <line>20</line>
           <option name="timeStamp" value="252" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/categories/string/6.py</url>
-          <line>22</line>
+          <line>24</line>
           <option name="timeStamp" value="253" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/categories/DP/64.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="254" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="254" />
+      <option name="time" value="255" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/leetcode/234.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leetcode/687.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1773,20 +1772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/categories/DP/62.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/categories/DP/63.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/categories/string/3.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1810,8 +1795,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/categories/string/6.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="18" selection-start-line="3" selection-start-column="6" selection-end-line="25" selection-end-column="18" />
+        <state relative-caret-position="450">
+          <caret line="30" column="34" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/categories/DP/62.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/categories/DP/63.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/categories/DP/64.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
