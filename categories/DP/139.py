@@ -16,6 +16,8 @@ class Solution:
         return f[len(s)]
 
 
+
+
 str = "applepenapple"
 wordDict = ["apple", "pen"]
 s = Solution()
