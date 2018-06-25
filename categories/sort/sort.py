@@ -260,17 +260,14 @@ def quicksort3(a, p, q):
 def partition3(a, p, q):
     guard = a[p]
     temp = p
-
     #重合时，退出循环
     while p < q:
-
         #一定要从右边找起，从右边找到比哨兵小的
         while p < q and a[q] >= guard:
             q -= 1
         #从左边找比哨兵大的
         while p < q and a[p] <= guard:
             p += 1
-
         #交换大小
         if p < q:
             a[p], a[q] = a[q], a[p]
@@ -324,9 +321,8 @@ def heapSortAsc(arr):
 # 1. 排序时，将最小的元素和最后一个子节点进行换位，继续2
 # 2. 然后重新构建小顶堆，继续1
 
-
-
-
+#                                  3                  6          7         8     19   //asc
+# 8 6 7 19 3 - 》 3 6 8  7 19      - 》     6  8 7 19 - 》 7 8 19 -》 8 19 - 》19
 def heapSortDes(arr):
     def build(a, length):
 

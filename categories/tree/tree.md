@@ -4,9 +4,14 @@
 
 
 
+
+# 关于数组和树的题目
 关于用数组构造出一颗独一无二的树
-叶子节点的子节点用#表示
-can be represented as the serialization 1,2,#,#,3,4,#,#,5,#,#, which is a unique representation of the tree.
+通常叶子节点的子节点用#表示(假设叶子节点也有子节点，用#表示)
+can be represented as the serialization 1,2,#,#,3,4,#,#,5,#,#, (先序遍历)which is a unique representation of the tree.
+
+
+
 
 
 
