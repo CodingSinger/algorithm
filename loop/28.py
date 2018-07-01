@@ -14,7 +14,6 @@
 class Solution:
 
 
-    def helper2(self,s):
 
     def helper(self,str):
 

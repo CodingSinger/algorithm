@@ -186,8 +186,8 @@
       <file leaf-file-name="28.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/loop/28.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            <state relative-caret-position="240">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -847,8 +847,8 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Python Console" order="8" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4952381" visible="true" weight="0.21242484" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.23847695" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4952381" weight="0.21242484" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.23847695" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20833333" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
@@ -1590,7 +1590,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/loop/28.py</url>
-          <line>5</line>
+          <line>13</line>
           <option name="timeStamp" value="288" />
         </line-breakpoint>
       </breakpoints>
@@ -1982,8 +1982,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/loop/28.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        <state relative-caret-position="240">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
