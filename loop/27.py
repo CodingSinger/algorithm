@@ -1,6 +1,7 @@
 from leetcode.tree import TreeNode
 
-
+# 1.核心是中序遍历的非递归算法。
+# 2.修改当前遍历节点与前一遍历节点的指针指向。
 class Solution:
     def helper(self, root):
         self.pre = None
