@@ -35,3 +35,4 @@ print(s.min())
 s.pop()
 print(s.min())
 print(s.arr)
+

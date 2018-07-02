@@ -23,7 +23,6 @@ class Solution:
                 all.append(pre)
             for i in range(len(s)):
                 permutation(pre+s[i],s[:i]+s[i+1:])
-
         permutation("",str)
 
         return all
