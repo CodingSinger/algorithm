@@ -1,4 +1,5 @@
 class Solution:
+    # 暴力法
     def helper(self, index):
 
         def isUgly(x):
